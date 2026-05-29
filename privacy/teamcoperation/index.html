@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>팀코퍼레이션 개인정보처리방침</title>
+  <meta name="description" content="팀코퍼레이션 Android 앱 개인정보처리방침" />
+  <style>
+    :root { color-scheme: light; --fg: #111827; --muted: #4b5563; --line: #e5e7eb; --bg: #f8fafc; --card: #ffffff; --accent: #2563eb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; color: var(--fg); background: var(--bg); }
+    main { max-width: 900px; margin: 0 auto; padding: 48px 20px 72px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 36px; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 22px; letter-spacing: -0.02em; }
+    h3 { margin: 24px 0 10px; font-size: 17px; }
+    p, li { color: var(--muted); line-height: 1.75; font-size: 16px; }
+    ul { padding-left: 22px; }
+    strong { color: var(--fg); }
+    .meta { margin: 0 0 28px; color: #6b7280; }
+    .notice { margin: 24px 0; padding: 16px 18px; border: 1px solid #bfdbfe; border-radius: 14px; background: #eff6ff; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 15px; }
+    th, td { border: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; line-height: 1.6; }
+    th { background: #f9fafb; color: var(--fg); }
+    @media (max-width: 640px) { article { padding: 24px; } table, thead, tbody, tr, th, td { display: block; width: 100%; } th { border-bottom: 0; } td { border-top: 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>팀코퍼레이션 개인정보처리방침</h1>
+      <p class="meta">시행일 및 최종 업데이트: 2026년 5월 29일</p>
+
+      <p>
+        본 개인정보처리방침은 <strong>팀코퍼레이션</strong>(패키지명: <code>com.teamcoperation.android</code>, 이하 “앱”)이
+        이벤트·교육·팀 미션 진행을 위해 어떤 정보를 처리하는지 설명합니다. 앱은 팀 단위 미션 진행, BLE 비콘 기반 포스트 인식,
+        사진·동영상 미션 제출, 점수 및 진행 상태 확인 기능을 제공합니다.
+      </p>
+
+      <div class="notice">
+        <p>
+          앱은 사용자의 실시간 GPS 이동 경로를 지속적으로 추적하거나 제3자에게 위치를 공유하기 위한 서비스가 아닙니다.
+          위치 관련 권한은 주로 BLE 비콘 스캔 및 주변 미션 포스트 인식을 위해 사용됩니다.
+        </p>
+      </div>
+
+      <h2>1. 처리하는 정보</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>처리 항목</th>
+            <th>처리 목적</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>팀 및 진행 정보</td>
+            <td>팀 번호, 미션 진행 상태, 발견한 미션, 보유 포인트, 타이머 상태, 퍼즐·미션 제출 결과</td>
+            <td>팀 로그인, 미션 진행, 점수 계산, 관리자 화면과의 실시간 동기화</td>
+          </tr>
+          <tr>
+            <td>미션 제출 미디어</td>
+            <td>사용자가 직접 촬영·선택하여 제출한 사진 또는 동영상, 제출 시각, 미션 ID, 평가 결과</td>
+            <td>미션 수행 여부 확인, 관리자 검수, AI 평가, 점수 반영</td>
+          </tr>
+          <tr>
+            <td>비콘 및 근접 인식 정보</td>
+            <td>주변 BLE 비콘의 UUID, major/minor, 신호 세기, 추정 거리, 인식 횟수</td>
+            <td>사용자가 “미션 찾기”를 시작했을 때 해당 장소의 미션 포스트를 인식</td>
+          </tr>
+          <tr>
+            <td>기기 및 통신 정보</td>
+            <td>앱 버전, Android SDK 버전, 제조사·모델, 네트워크 요청 정보, 오류 정보</td>
+            <td>서비스 운영, 장애 진단, 보안 및 품질 개선</td>
+          </tr>
+          <tr>
+            <td>로컬 저장 정보</td>
+            <td>앱에 저장되는 팀 번호 등 최소한의 설정값</td>
+            <td>앱 재실행 시 팀 상태 복원</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>2. 권한 사용 목적</h2>
+      <ul>
+        <li><strong>위치 권한</strong>: Android에서 BLE 비콘 스캔을 위해 위치 권한이 요구될 수 있습니다. 앱은 이를 미션 포스트 근접 인식에 사용하며, 사용자의 이동 경로를 지속적으로 기록하거나 공유하지 않습니다.</li>
+        <li><strong>블루투스 권한</strong>: 주변 BLE 비콘을 검색하고 미션 포스트를 식별하기 위해 사용합니다.</li>
+        <li><strong>카메라 권한</strong>: 미션 인증 사진 또는 동영상을 촬영하기 위해 사용합니다.</li>
+        <li><strong>마이크 권한</strong>: 사용자가 동영상 미션을 촬영할 때 영상과 함께 음성을 녹음하기 위해 사용합니다.</li>
+        <li><strong>인터넷 권한</strong>: 서버와 통신하여 팀 상태, 미션, 공지, 점수, 업로드 결과를 동기화하기 위해 사용합니다.</li>
+        <li><strong>진동 권한</strong>: 비콘 인식 등 앱 내 피드백을 제공하기 위해 사용합니다.</li>
+      </ul>
+
+      <h2>3. 정보의 이용 목적</h2>
+      <ul>
+        <li>팀별 미션 진행 및 점수 계산</li>
+        <li>사용자가 제출한 사진·동영상 미션의 검수 및 평가</li>
+        <li>BLE 비콘 기반 미션 포스트 발견 기능 제공</li>
+        <li>공지, 타이머, 점수판 등 이벤트 운영 기능 제공</li>
+        <li>오류 분석, 부정 사용 방지, 서비스 안정성 개선</li>
+      </ul>
+
+      <h2>4. 제3자 처리 및 외부 서비스</h2>
+      <p>
+        앱은 서비스 제공을 위해 운영 서버(<a href="https://teamcorperation.kr">https://teamcorperation.kr</a>)와 통신합니다.
+        사용자가 제출한 미션 사진 또는 동영상은 미션 검수 및 AI 평가를 위해 서버에서 처리될 수 있으며, 필요한 경우 AI 평가 서비스에 전달될 수 있습니다.
+        앱 운영자는 법령상 요구되거나 사용자의 동의가 있는 경우를 제외하고 개인정보를 판매하지 않습니다.
+      </p>
+
+      <h2>5. 보관 및 삭제</h2>
+      <p>
+        팀 진행 정보와 제출 미디어는 이벤트 운영, 결과 확인, 부정 사용 방지 및 장애 대응에 필요한 기간 동안 보관될 수 있습니다.
+        보관 목적이 달성되었거나 삭제 요청이 처리된 경우 관련 정보를 삭제하거나 식별이 어려운 형태로 처리합니다.
+        단, 법령 준수, 분쟁 대응, 보안 및 감사 목적상 필요한 정보는 해당 목적에 필요한 기간 동안 보관될 수 있습니다.
+      </p>
+
+      <h2>6. 사용자의 선택 및 권리</h2>
+      <ul>
+        <li>사용자는 Android 설정에서 위치, 블루투스, 카메라, 마이크 권한을 언제든지 변경할 수 있습니다.</li>
+        <li>필수 권한이 거부되면 비콘 미션 찾기, 사진·동영상 제출 등 일부 기능이 제한될 수 있습니다.</li>
+        <li>개인정보 열람, 정정, 삭제 또는 처리 제한 요청은 이벤트 운영자 또는 앱 개발자에게 문의할 수 있습니다.</li>
+      </ul>
+
+      <h2>7. 아동 개인정보</h2>
+      <p>
+        앱은 일반 대중을 대상으로 하는 소셜 네트워크나 위치 공유 서비스가 아니며, 이벤트·교육 현장의 팀 미션 운영 목적으로 사용됩니다.
+        만 14세 미만 사용자의 개인정보 처리가 필요한 경우, 운영자는 관련 법령과 현장 운영 정책에 따라 필요한 동의 절차를 진행해야 합니다.
+      </p>
+
+      <h2>8. 보안</h2>
+      <p>
+        앱은 네트워크 통신, 접근 제어, 운영 관리 절차를 통해 정보를 안전하게 처리하기 위해 노력합니다.
+        다만 인터넷 기반 서비스의 특성상 모든 위험을 완전히 제거할 수는 없습니다.
+      </p>
+
+      <h2>9. 변경 고지</h2>
+      <p>
+        본 방침은 앱 기능, 운영 방식 또는 관련 법령 변경에 따라 수정될 수 있습니다.
+        중요한 변경이 있는 경우 이 페이지의 업데이트 날짜를 변경하여 고지합니다.
+      </p>
+
+      <h2>10. 문의</h2>
+      <p>
+        개인정보 및 앱 운영 관련 문의는 Google Play 스토어에 표시된 개발자 연락처, 이벤트 운영자 또는 아래 GitHub 프로필을 통해 문의해 주세요.
+      </p>
+      <ul>
+        <li>GitHub: <a href="https://github.com/airman5573">https://github.com/airman5573</a></li>
+        <li>정책 URL: <a href="https://airman5573.github.io/privacy/teamcoperation/">https://airman5573.github.io/privacy/teamcoperation/</a></li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>
