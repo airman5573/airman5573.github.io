@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teamrace Android 앱 개인정보처리방침</title>
+  <meta name="description" content="Teamrace Android 앱 개인정보처리방침" />
+  <link rel="canonical" href="https://airman5573.github.io/privacy/teamrace-android/" />
+  <style>
+    :root { color-scheme: light; --fg: #111827; --muted: #4b5563; --line: #e5e7eb; --bg: #f8fafc; --card: #ffffff; --accent: #2563eb; --notice-line: #bfdbfe; --notice-bg: #eff6ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; color: var(--fg); background: var(--bg); }
+    main { max-width: 920px; margin: 0 auto; padding: 48px 20px 72px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 36px; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 22px; letter-spacing: -0.02em; }
+    p, li { color: var(--muted); line-height: 1.75; font-size: 16px; }
+    code { padding: 2px 5px; border-radius: 6px; background: #f3f4f6; color: var(--fg); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+    ul { padding-left: 22px; }
+    strong { color: var(--fg); }
+    .meta { margin: 0 0 28px; color: #6b7280; }
+    .notice { margin: 24px 0; padding: 16px 18px; border: 1px solid var(--notice-line); border-radius: 14px; background: var(--notice-bg); }
+    .notice p { margin: 0; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 15px; }
+    th, td { border: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; line-height: 1.6; }
+    th { background: #f9fafb; color: var(--fg); }
+    td { color: var(--muted); }
+    @media (max-width: 640px) {
+      main { padding: 28px 12px 48px; }
+      article { padding: 24px; border-radius: 14px; }
+      table, thead, tbody, tr, th, td { display: block; width: 100%; }
+      th { border-bottom: 0; }
+      td { border-top: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Teamrace Android 앱 개인정보처리방침</h1>
+      <p class="meta">시행일 및 최종 업데이트: 2026년 7월 26일</p>
+
+      <p>
+        본 개인정보처리방침은 <strong>Teamrace 운영자(airman5573)</strong>가 제공하는
+        <strong>Teamrace</strong> Android 앱(패키지명: <code>kr.ai.asol.teamrace</code>, 이하 “앱”)이
+        행사·워크숍·수업의 실시간 팀 단어 레이스를 제공하기 위해 어떤 정보를 처리하는지 설명합니다.
+      </p>
+
+      <div class="notice">
+        <p>
+          보이스 모드의 음성 인식은 <strong>Android 기기에 설치된 기본 음성 인식 서비스</strong>가 수행합니다.
+          대부분의 기기에서는 Google 앱이 이 기능을 제공하며, 기기 설정과 언어팩 설치 상태에 따라 해당 제공자의 서버에서 음성이 처리될 수 있습니다.
+          <strong>Teamrace 서버로는 마이크 음성과 전체 인식 문장을 전송하지 않으며</strong>, 화면의 단어와 일치한 경우 그 정답 키만 채점을 위해 전송합니다.
+          앱은 광고 SDK, 광고 식별자 또는 제3자 분석·추적 기능을 사용하지 않습니다.
+        </p>
+      </div>
+
+      <p>
+        iOS 앱의 개인정보처리방침은 별도 페이지(<a href="https://airman5573.github.io/privacy/teamrace/">https://airman5573.github.io/privacy/teamrace/</a>)에 있습니다.
+        음성 인식 처리 방식이 플랫폼마다 다르므로 Android 앱에는 본 방침이 적용됩니다.
+      </p>
+
+      <h2>1. 처리하는 정보</h2>
+      <table>
+        <thead>
+          <tr><th>구분</th><th>처리 항목</th><th>처리 목적</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>팀 인증 및 세션 정보</td>
+            <td>사용자가 입력한 팀 입장 코드, 서버가 부여한 팀 ID·역할, 로그인 상태와 세션 쿠키</td>
+            <td>팀 인증, 로그인 상태 유지, 해당 팀의 경기 연결</td>
+          </tr>
+          <tr>
+            <td>게임플레이 정보</td>
+            <td>맞힌 정답 키, 정답에 적용되는 진행 배수, 개인·팀 점수, 경기 상태, 순위 및 진행 결과</td>
+            <td>실시간 채점, 팀 점수 동기화, 경기 진행과 결과 표시</td>
+          </tr>
+          <tr>
+            <td>서버 콘텐츠</td>
+            <td>서버가 제공하는 게임 아이템 ID, 표시 단어, 이미지 URL 및 정답 키</td>
+            <td>게임 카드 표시와 정답 판정</td>
+          </tr>
+          <tr>
+            <td>기기 내 설정</td>
+            <td>앱이 보관하는 Teamrace 서버 주소 설정값, Teamrace 세션 쿠키</td>
+            <td>서버 연결과 앱 재실행 시 로그인 세션 복구</td>
+          </tr>
+          <tr>
+            <td>통신 및 운영 정보</td>
+            <td>IP 주소, 접속 시각, 네트워크 요청·응답 및 오류 정보 등 서버 운영 과정에서 생성될 수 있는 기록</td>
+            <td>서비스 제공, 보안, 부정 이용 방지, 장애 진단 및 품질 유지</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        팀 입장 코드는 인증을 위해 서버로 전송됩니다. 앱은 입장 코드를 기기에 저장하지 않으며 분석 SDK에도 남기지 않습니다.
+        다만 로그인 성공 후 서버가 발급한 세션 쿠키를 기기 내부 저장소에 보관하여 세션을 복구합니다.
+        팀 입장 코드는 개인 이름·이메일·전화번호를 요구하는 개인 계정이 아니라 행사 운영자가 팀 단위로 제공하는 공유 인증 정보입니다.
+      </p>
+
+      <h2>2. 앱이 요청하는 권한</h2>
+      <ul>
+        <li><strong>마이크(RECORD_AUDIO)</strong>: 보이스 모드에서 사용자가 말한 단어를 인식하기 위해 사용합니다.</li>
+        <li><strong>인터넷·네트워크 상태(INTERNET, ACCESS_NETWORK_STATE)</strong>: 경기 서버 연결과 연결 상태 확인에 사용합니다.</li>
+        <li><strong>진동(VIBRATE)</strong>: 정답 처리 시 촉각 피드백에 사용합니다.</li>
+      </ul>
+      <p>
+        앱은 위치, 연락처, 사진·미디어, 파일, 캘린더, 전화 관련 권한을 요청하지 않습니다.
+      </p>
+
+      <h2>3. 마이크와 음성 인식</h2>
+      <ul>
+        <li><strong>인식 방식</strong>: 앱은 Android 표준 <code>SpeechRecognizer</code> API를 사용해 기기에 설치된 기본 음성 인식 서비스에 인식을 요청합니다. 대부분의 기기에서는 Google 앱이 이 서비스를 제공합니다.</li>
+        <li><strong>처리 위치</strong>: 인식이 기기 내부에서 이루어질지, 제공자의 서버에서 이루어질지는 기기 제조사 설정과 한국어 언어팩 설치 상태에 따라 달라집니다. 이 처리에는 해당 제공자의 개인정보처리방침이 적용됩니다.</li>
+        <li><strong>서버 전송 없음</strong>: 원본 마이크 음성과 전체 인식 문장은 Teamrace 서버로 보내지 않습니다. 화면의 단어와 일치한 경우 그 정답 키만 채점을 위해 보냅니다.</li>
+        <li><strong>저장 없음</strong>: 앱은 음성을 기기에 저장하지 않으며 녹음 파일을 만들지 않습니다.</li>
+      </ul>
+      <p>
+        사용자는 권한을 허용하지 않거나 Android 설정에서 언제든 철회할 수 있습니다. 권한을 허용하지 않으면 보이스 모드는 사용할 수 없지만,
+        운영 중인 경기가 타이핑 모드를 제공하는 경우 마이크 없이 참여할 수 있습니다.
+      </p>
+
+      <h2>4. 정보의 이용 목적</h2>
+      <ul>
+        <li>팀 입장 코드 인증과 로그인 세션 유지</li>
+        <li>실시간 경기 연결, 정답 판정, 개인·팀 점수 및 순위 계산</li>
+        <li>게임 단어와 이미지 표시</li>
+        <li>경기 상태와 결과의 실시간 동기화</li>
+        <li>서비스 보안, 부정 이용 방지, 장애 분석 및 안정성 유지</li>
+        <li>사용자 문의와 권리 행사 요청 대응</li>
+      </ul>
+
+      <h2>5. 정보의 보관 및 삭제</h2>
+      <p>
+        팀 인증·경기·점수 정보와 서버 로그는 경기 운영, 결과 확인, 보안, 장애 및 분쟁 대응에 필요한 기간 동안 보관한 뒤
+        목적이 달성되면 삭제하거나 식별하기 어려운 형태로 처리합니다. 법령상 보존 의무가 있는 정보는 해당 법정 기간 동안 보관할 수 있습니다.
+      </p>
+      <p>
+        사용자가 앱에서 로그아웃하면 기기에 저장된 Teamrace 세션 쿠키가 삭제됩니다. 앱을 삭제하면 앱 저장소의 설정과 세션 정보도 기기에서 삭제됩니다.
+        앱 삭제 또는 로그아웃은 서버에 이미 저장된 경기 기록을 자동으로 삭제하지 않으며, 서버 기록의 열람·삭제 요청은 아래 문의처로 보낼 수 있습니다.
+      </p>
+
+      <h2>6. 외부 서비스와 정보 공유</h2>
+      <p>
+        앱은 기능 제공을 위해 운영 서버
+        <a href="https://teamrace.asol.ai.kr">https://teamrace.asol.ai.kr</a>와 HTTPS 및 WSS로 통신합니다.
+        보이스 모드에서는 위 3항에 설명한 대로 Android 기본 음성 인식 서비스에 음성이 전달됩니다.
+        개인정보처리방침 페이지는 GitHub Pages에서 제공되므로 이 페이지 접속 시 GitHub의 서버 로그 및 쿠키 정책이 적용될 수 있습니다.
+      </p>
+      <p>
+        운영자는 법령상 요구되거나 사용자의 동의가 있는 경우를 제외하고 처리 정보를 판매하지 않으며,
+        광고 네트워크 또는 제3자 추적 사업자와 공유하지 않습니다. 서비스 제공을 위해 처리 위탁이나 외부 사업자가 추가되는 경우,
+        해당 사업자에게 본 방침 및 적용 법령과 동등한 수준의 보호를 요구하고 이 방침을 갱신합니다.
+      </p>
+
+      <h2>7. 추적 및 광고</h2>
+      <ul>
+        <li>앱은 광고 ID(AAID) 등 광고 식별자를 사용하지 않습니다.</li>
+        <li>앱에는 제3자 광고 SDK, 분석 SDK, 크래시 리포팅 SDK가 포함되어 있지 않습니다.</li>
+        <li>앱의 정보를 다른 회사의 앱·웹사이트 활동과 결합하여 광고 프로필을 만들지 않습니다.</li>
+        <li>앱에는 인앱 결제, 현금성 경품, 베팅·도박 요소가 없습니다.</li>
+      </ul>
+
+      <h2>8. 사용자의 선택과 권리</h2>
+      <ul>
+        <li>사용자는 Android 설정에서 마이크 권한을 언제든 변경할 수 있습니다.</li>
+        <li>사용자는 앱에서 로그아웃하여 Teamrace 세션 쿠키를 삭제할 수 있습니다.</li>
+        <li>사용자는 개인정보 또는 팀 경기 정보의 열람, 정정, 삭제, 처리 제한을 요청할 수 있습니다.</li>
+        <li>공유 팀 입장 코드는 다른 사람에게 노출되지 않도록 행사 운영자의 안내에 따라 관리해야 합니다.</li>
+      </ul>
+
+      <h2>9. 아동의 개인정보</h2>
+      <p>
+        앱은 일반 대중을 위한 소셜 네트워크가 아니라 행사·워크숍·수업에서 팀 단위로 사용하는 게임 도구입니다.
+        앱은 개인 이름, 이메일 또는 전화번호를 직접 요구하지 않습니다. 만 14세 미만 사용자가 참여하는 행사의 운영자는
+        적용 법령과 현장 운영 정책에 따라 보호자 동의 등 필요한 절차를 마련해야 합니다.
+        운영자는 권한 없이 아동의 개인정보가 제공된 사실을 알게 되면 관련 법령에 따라 필요한 조치를 취합니다.
+      </p>
+
+      <h2>10. 보안</h2>
+      <p>
+        운영자는 HTTPS/WSS 암호화 통신, 세션 접근 제어와 운영 관리 절차 등 합리적인 보호조치를 사용합니다.
+        다만 인터넷 통신과 전자적 저장 방식의 특성상 모든 위험을 완전히 제거할 수는 없습니다.
+      </p>
+
+      <h2>11. 방침 변경</h2>
+      <p>
+        앱 기능, 서버 운영 방식 또는 관련 법령이 변경되면 본 방침을 수정할 수 있습니다.
+        변경된 시행일과 최종 업데이트 날짜는 이 페이지에 표시하며, 중요한 변경은 필요한 경우 앱 또는 서비스 운영 채널을 통해 추가로 알립니다.
+      </p>
+
+      <h2>12. 문의 및 권리 행사</h2>
+      <p>개인정보, 경기 기록 삭제 또는 앱 지원에 관한 문의는 아래 연락처로 보내 주세요.</p>
+      <ul>
+        <li>운영자: Teamrace 운영자(airman5573)</li>
+        <li>이메일: <a href="mailto:rpf5573@kakao.com">rpf5573@kakao.com</a></li>
+        <li>지원 페이지: <a href="https://airman5573.github.io/teamrace/">https://airman5573.github.io/teamrace/</a></li>
+        <li>GitHub: <a href="https://github.com/airman5573">https://github.com/airman5573</a></li>
+        <li>본 정책 URL: <a href="https://airman5573.github.io/privacy/teamrace-android/">https://airman5573.github.io/privacy/teamrace-android/</a></li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>
